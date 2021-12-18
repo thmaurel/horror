@@ -1,6 +1,3 @@
-require 'csv'
-
-
 def split(arr)
   arr.each_with_index do |el1,i|
     if el1.class == Array
