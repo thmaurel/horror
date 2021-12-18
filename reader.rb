@@ -30,16 +30,12 @@ end
 def explode(test)
   last = []
   test.each_with_index do |el1,i|
-    last = [i] if el1.class == Integer
     if el1.class == Array
       el1.each_with_index do |el2,j|
-        last = [i,j] if el2.class == Integer
         if el2.class == Array
           el2.each_with_index do |el3,k|
-            last = [i,j,k] if el3.class == Integer
             if el3.class == Array
               el3.each_with_index do |el4,l|
-                last = [i,j,k,l] if el4.class == Integer
                 if el4.class == Array
                   left = el4.first
                   right = el4.last
@@ -247,7 +243,6 @@ end
     test.each_with_index do |el1,i|
       if el1.class == Array
         el1.each_with_index do |el2,j|
-          last = [i,j] if el2.class == Integer
           if el2.class == Array
             el2.each_with_index do |el3,k|
               if el3.class == Array
