@@ -132,6 +132,7 @@ def reduce(array)
   return array
 end
 
+maxs = []
 100.times do |i|
   100.times do |j|
   array_tot = [
